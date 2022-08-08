@@ -1,0 +1,46 @@
+<!--Bootstrap-->
+<!--Ми можемо додати Bootstrap до нашого коду за допомогою одного рядка в заголовку нашого HTML-файлу:-->
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+<!--Далі ми можемо розглянути деякі особливості Bootstrap, перейшовши до документації на їхньому вебсайті. На цій -->
+<!--сторінці ви знайдете багато прикладів класів, які можна додати до елементів, що дозволяють їх стилізувати за-->
+<!--допомогою Bootstrap.-->
+<!--Однією з популярних функцій Bootstrap є сітка. Bootstrap автоматично розділяє сторінку на 12 стовпців, і ми -->
+<!--можемо вирішити, скільки стовпців забирає елемент, додавши клас col-x, де x - число від 1 до 12. Наприклад, на -->
+<!--наведеній сторінці у нас є рядок стовпців однакової ширини, а потім рядок, де центральний стовпець більший:-->
+
+<!--Щоб покращити швидкість реагування на мобільних пристроях, Bootstrap також дозволяє вказати розміри стовпців,
+які відрізняються залежно від розміру екрана. У наведеному прикладі ми використовуємо col-lg-3, щоб показати, що
+елемент повинен займати 3 стовпці на великому екрані, а col-sm-6, щоб показати, що елемент, повинен займати 6 стовпців,
+коли екран невеликий:-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Web Page!</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .row > div {
+                padding: 20px;
+                background-color: teal;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    This is a section.
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    This is another section.
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    This is a third section.
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    This is a fourth section.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

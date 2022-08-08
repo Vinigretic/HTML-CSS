@@ -1,0 +1,152 @@
+<!DOCTYPE html> <!--в этой строке сообщаем браузеру какую версию HTML используем. В этом случае это HTML 5 -->
+
+<html lang="en"> <!-- lang="en" говорим поисковику на каком языке написан сайт-->
+
+<head>  <!--в этом блоке(часть сайта) описываем инфо необходимое для поисковика(браузера), пользователь
+            эту инфу не видит  ....-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--адаптация размера страницы-->
+    <link rel="stylesheet" href="CSS lesson one.css">  <!-- подключение стилей css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- подключение шрифтов, берем ссылки с сайта https://fonts.google.com/-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- подключение шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- подключение шрифтов -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <!--одключение  Бутстрам-->
+    <title>Resume</title>  <!-- название вкладки, которое отображается в браузере -->
+
+</head>
+
+<!--<body></body>  в этом участке описываем инфо (ТЕГИ) которое будет видеть пользователь-->
+
+<!--Отступы ни на что не влияют, нужны только для читабельности кода-->
+
+<!-- <h1>Hello world</h1> это заголовки, их может быть до 6(1-6) уровней, от номера заголовка меняется размер шрифта-->
+
+<!-- <ol></ol>            создание нумерованного списка-->
+
+<!--<ul></ul>             создание ненумерованного списка-->
+
+<!--<li></li>             помещаем в блок ol или ul здесь прописываем пункты списка, сколько пунктов столько li-->
+
+<!--<a href="помещаем ссылку на которую хотим перейти">текст который хотим чтобы видел пользователь</a> - блок(якорь)
+в котором размещаем рабочие ссылки(кликабельные)-->
+
+<!--<a href="https://hellenglish.goit.global/">Перейдите по ссылке</a>-->
+
+<!--<img src="ПУТЬ К изображению" alt="комментарий который отобразится если изображение не загрузится" width="ширина
+изображения" этот параметр автомитически изменяет и высоту, что бы изображение было пропорциональным -->
+
+<!-- <img src="img/photo.jpg" alt="user photo" class="photo">-->
+<!--тег с изображением не нужно закрывать-->
+
+<!--Создание таблицы-->
+<!--<table></table> тег для создания таблиц-->
+<!--<thead></thead> тег для заголовка таблицы помещаем в тег table-->
+<!--<tbody></tbody> тег в который помещаем тело таблицыпомещаем тег в table на уровене thead-->
+<!--<tr></tr> тег для создания ряда таблицы помещаем тег в tbody-->
+<!--<th></th> тег для создания столбцов таблицы помещаем тег в tr-->
+<!--<td></td> тег для заполения столбцов помещаем тег в tr-->
+<!--    <table>-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>Ocean</th>-->
+<!--                <th>Average</th>-->
+<!--                <th>Maximum</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--            <tr>-->
+<!--                <td>Pacific ocean</td>-->
+<!--                <td>4.500</td>-->
+<!--                <td>111100</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Atlantic ocean</td>-->
+<!--                <td>6.500</td>-->
+<!--                <td>111200</td>-->
+<!--            </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+
+<!--<button>Click here</button> создание кнопки-->
+
+<!--button:hover {
+    background-color: blue; изменение цвета кнопки при наведении курсора
+}-->
+
+<!--Создание форм-->
+<!--<form></form> тег для создания формы-->
+<!--<input type="указываем тип " placeholder="имя поля" name="инфо которую вводит пользователь"> тег для создания
+    поля введения-->
+
+<!--<input type="submit"> тег для отправки формы-->
+
+<!--Создание формы -Поле введения-->
+<!--<body>-->
+<!--    <form>-->
+<!--        <input type="text " placeholder="Full name" name="name">-->
+<!--        <input type="password " placeholder="Password" name="pasword">-->
+<!--        <input type="submit">-->
+<!--    </form>-->
+<!--</body>-->
+
+<!--Создание радио-кнопок-->
+<!--<body>-->
+<!--    <form>-->
+<!--        favorite color?-->
+<!--        <input type="radio" placeholder="Full name" name="color" value="red"> Red-->
+<!--        <input type="radio" placeholder="Full name" name="color" value="green"> Green-->
+<!--        <input type="radio" placeholder="Full name" name="color" value="blue"> Blue-->
+<!--        <input type="radio" placeholder="Full name" name="color" value="other"> Other-->
+<!--    </form>-->
+<!--</body>-->
+
+<!--Создание выпадающих списков-->
+<!--<body>-->
+<!--    <form>-->
+<!--        choose number-->
+<!--        <input list="numbers" placeholder="Numbers" name="numbers">-->
+<!--        <datalist id="numbers">-->
+<!--            <option value="1">-->
+<!--            <option value="2">-->
+<!--            <option value="3">-->
+<!--            <option value="4">-->
+<!--            <option value="5">-->
+<!--        </datalist>-->
+<!--    </form>-->
+<!--</body>-->
+
+<!--Создание кнопки с выпадающим списком-->
+<!--<select>-->
+<!--    <option value="black">Black</option>-->
+<!--    <option value="red">Red</option>-->
+<!--    <option value="blue">Blue</option>-->
+<!--    <option value="green">Green</option>-->
+<!--</select>-->
+
+<!-- <div> </div> универсальний контейнер, используеся для того что бы обьеденить несколько элементов интерфейса
+                          в один контейнер, в него можем помещать любые теги -->
+
+<!--id="foo" присвоение уникального имени элементу, с помощью этого имени сможем задавать стили только для этого
+эл-та-->
+<!--    <h1>Hello world</h1>-->
+<!--    <h2 id="foo">Hello world</h2>-->
+<!--    <h3>Hello world</h3>-->
+
+<!--class ="baz" когда нам нужно сделать одинаковые изменения для элементов или блоков создаем для них класс-->
+<!--    <h1 class="baz">Hello world</h1>-->
+<!--    <h2 id="foo">Hello world</h2>-->
+<!--    <h3 class="baz">Hello world</h3>-->
+
+
+
+<!--<span></span>  тег для обрамления текста-->
+
+<!--<aside></aside>       спец тег для сайтбара-->
+
+
+
+
+
+

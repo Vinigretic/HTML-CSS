@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul > li {
+            color: red; <!--все строки не нумерованного списка будут красные-->
+        }
+        a {
+            color: green;
+        }
+        a[href="https://facebook.com"] {
+            color: red;  <!--только эта ссылка будет красной-->
+        }
+        button {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            font-size: 25px;
+        }
+        button:hover {
+            background-color: blue; <!--изменение цвета кнопки при наведении курсора-->
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>Hello</li>
+            <li>Hello</li>
+            <li>Hello</li>
+            <ul>
+                <li>Hello</li>
+                <li>Hello</li>
+                <li>Hello</li>
+            </ul>
+            <li>Hello</li>
+            <ul>
+                <li><a href="https://www.google.com/search?q=">Gogle</a></li>
+                <li><a href="https://www.google.com/imghp">Facebook</a></li>
+                <li><a href="https://amazon.com">Amazon</a></li>
+
+            </ul>
+        </ol>
+    </div>
+    <button>Click here</button>
+</body>
+</html>
